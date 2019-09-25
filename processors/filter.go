@@ -1,6 +1,6 @@
 package processors
 
-import "Reporter/models"
+import "github.com/bytegaurav/gosec-reporter/models"
 
 func SortIssuesBySeverity(logObject models.GoSec) models.SortBySeverity {
 

@@ -1,14 +1,15 @@
 package main
 
 import (
-	"Reporter/messenger"
-	"Reporter/models"
-	"Reporter/processors"
 	"encoding/json"
 	"flag"
 	"fmt"
 	"io/ioutil"
 	"log"
+
+	"github.com/bytegaurav/gosec-reporter/messenger"
+	"github.com/bytegaurav/gosec-reporter/models"
+	"github.com/bytegaurav/gosec-reporter/processors"
 )
 
 func main() {

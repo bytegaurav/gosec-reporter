@@ -1,12 +1,13 @@
 package messenger
 
 import (
-	"Reporter/models"
 	"bytes"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"net/http"
+
+	"github.com/bytegaurav/gosec-reporter/models"
 )
 
 func SendMessage(url string, chat models.Chat) (models.ChatResponse, error) {
