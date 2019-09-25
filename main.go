@@ -11,7 +11,6 @@ import (
 	"log"
 )
 
-
 func main() {
 	file := flag.String("log-file", "", "location of gosec (https://github.com/securego/gosec) log file to be processed")
 	space := flag.String("space-id", "", "id of chat room")
@@ -36,7 +35,7 @@ func main() {
 		Text: "SAST Result from recent pipeline build",
 	}
 
-	threadCreateMessage, err :=messenger.SendMessage(url, firstMessage)
+	threadCreateMessage, err := messenger.SendMessage(url, firstMessage)
 
 	if err != nil {
 		log.Fatal(err)
@@ -76,4 +75,3 @@ func main() {
 	return
 
 }
-

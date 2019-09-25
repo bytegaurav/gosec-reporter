@@ -9,9 +9,7 @@ func SortIssuesBySeverity(logObject models.GoSec) models.SortBySeverity {
 		Medium: 0,
 		High:   0,
 	}
-
 	for _, item := range logObject.Issues {
-
 		switch item.Severity {
 		case "LOW":
 			result.Low++
@@ -23,7 +21,6 @@ func SortIssuesBySeverity(logObject models.GoSec) models.SortBySeverity {
 	}
 
 	return result
-
 }
 
 func SortIssuesByMessage(logObject models.GoSec) (map[string]int, int) {

@@ -64,8 +64,6 @@ type ErrorResponse struct {
 	} `json:"error"`
 }
 
-
-
 type SortBySeverity struct {
 	Low    int
 	Medium int
